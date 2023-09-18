@@ -1,0 +1,34 @@
+Everything is an object
+classes are a pattern system for objects, they are composed of atributes and methods
+
+atributes => data stored by each object
+methods => the messages our class can receive during the program run
+instance => the occurrence of a class
+abstraction => reduce objects to its bare characteristics
+encapsulation => Protecting access to data and functionality
+inheritance => inherit the characteristics of one class into another class
+
+class Aluno
+  def initialize(atribute_name, atribute_name)
+    @atribute_name = atribute_value
+    @atribute_name = atribute_value
+    @atribute_name = atribute_value
+  end     => initializes and defines atributes of class
+
+  # Getter
+  def telefone
+    return @telefone 
+  end   => method to read atribute
+
+  # Setter
+  # Sim! Em Ruby podemos declarar métodos com =
+  def telefone=(valor)
+    @telefone = valor
+  end    => Method to edit atribute
+end     
+
+class_name.new(atribute_value, atribute_value) => creates new instance of the class
+super(atribute) => calls the methods with same name on the parent class
+class.ancestors => shows all heritance of a class
+
+require_relative 'file_name' => run the file with the code needed

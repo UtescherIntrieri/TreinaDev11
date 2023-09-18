@@ -1,0 +1,45 @@
+[] are just for easier visualization, do not write them on command line
+
+wsl => runs ubuntu
+
+~ => shortcut to user directory
+
+* => all
+
+pwd => (print working directory) - prints current directory name
+
+ls => visualize directory content
+  -l => show more details on said content
+  -a => show hidden files
+  
+mkdir [directory_name] => (make directory) create a new directory
+
+cd [directory_name] => (change directory)
+  . => refers to current directory
+  .. => refers to one directory above the current one
+  - => previous directory
+  
+touch [file_name] => create file (originally to update the modification date of a file)
+  .[file_name] => creates a hidden file
+  
+gedit [file_name] => edit file on gedit
+
+code . => open current folder on vscode
+
+cat [file_name] => visualize file contents
+
+cp => copy
+  [original_file_name] [new_file_name] => copy file on the same directory but changing its name
+  [file_name] [target_directory_name] => copy file to another directory (may have multiple file_name)
+  -r [directory_name] [target_directory] => (means recursive) will copy a directory and all files inside to another directory (may have multiple origin_directory_name)
+
+mv => move or rename
+  [file_name] [directory_name] => move file to directory (may have multiple file_name)
+  [original_file_name] [new_file_name] => rename file
+  [directory_name] [target_directory_name] => move directory to another directory (may have multiple directory_name_name)
+  
+rm [file_name] => delete file (may have multiple file_name)
+
+rmdir [directory_name] => delete directory
+
+clear => clear screen

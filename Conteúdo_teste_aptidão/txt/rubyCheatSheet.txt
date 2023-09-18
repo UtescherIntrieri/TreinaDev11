@@ -1,0 +1,113 @@
+irb => runs ruby
+
+# => commentary 
+
+puts() => print, console.log()
+  puts("string")
+  puts "string"
+  puts('string')
+  puts number
+  
+gets => get input as string
+
+< => smaller than
+> => bigger than
+= => assignment
+== => is equal
+!= => is different
+&& => and
+|| => or
++ => contatenate strings or add numbers
++= => sum original variable value with another value and keeps it
+-= subtract original variable value with another value and keeps it
+*= multiply original variable value with another value and keeps it
+/= divides original variable value with another value and keeps it
+% => rest from division
+
+
+# variables in ruby don't have a fixed type
+variable_name = 'string' # or "string" (single quotes for regular strings and double quotes for strings with interpolation)
+variable_name = number
+variable_name = true # or false
+:symbol_name => just like strings, but are kept in the computer memory 
+
+  -Methods- # Function()
+  
+    .positive?() => tells if the value is positive
+    .negative?() => tells if the value is negative
+    .odd?() => tells if the value is odd
+    .even?() => tells if the value is even
+    .length() => how many characters there are in the string
+    .downcase() => replace all uppercase letters with their lowercase counterparts
+    .uppercase() => replace all downcase letters with their uppercasecase counterparts
+    .to_s() => turn into string
+    .to_i => turns into integer (1, -45, 0)
+    .to_f => turns into float (-2.3, 5.790, 3.5)
+    .chomp => remove any record separators (\n from enter, etc)
+    #{} => interpolation
+    number..number => all numbers between these two (inclusive)
+  
+# arrays in ruby don't have a fixed type neither do their elements
+array_name = []
+array_name[0] => first element of array
+array_name[-1] => last element of array
+hash_name = {element_name: 'value', element_name: value} # usually used alongside symbols
+
+  -Methods- # Function()
+
+    array_name << variable => adds the value as the last element in the array ('string', number, etc)
+    array_name.pop() => removes last element of array
+    array_name[n] = value => changes the value of that n element in the array ('string', number, etc)
+    array_name.first() => returns first element of array
+    array_name.last() => returns last element of array
+    array_name.length() => returns total number of element of array
+    array_name.each => runs every elemnt on array
+    array_name.delete(element_value) => deletes the element from array
+    
+    -Structures-
+    
+if number.odd?()
+  puts 'é um número ímpar.'
+else
+  puts 'é um número par.'
+end
+---------------------------
+nota = 7
+case nota
+when 0
+  puts 'Você tirou zero! Precisa melhorar…'
+when 1..4
+  puts 'Reprovado… precisa se esforçar mais...'
+when 5
+  puts 'Passou raspando!'
+when 6..9
+  puts 'Parabéns, você foi aprovado.'
+else
+  puts 'Tirou 10! Você deve ser o melhor aluno que já tive!'
+end
+---------------------------
+tecla_pressionada = 's'
+alunos = []
+while tecla_pressionada == 's' do
+  puts 'Digite o nome do aluno: '
+  nome_aluno = gets.chomp
+  alunos << nome_aluno
+
+  puts 'Deseja inserir um novo aluno? s ou n'
+  tecla_pressionada = gets.chomp
+end
+---------------------------
+for (int i = 0; i < um_array.length() - 1; i++) {
+  print(um_array[i]);
+}
+---------------------------
+# declaração do método
+def nome_do_metodo() #os parênteses são opcionais
+  puts 'Que método legal!'
+  # mais linhas de código
+end
+
+# chamada
+nome_do_metodo() # método é executado neste momento 
+# imprime na tela a texto “Que método legal!”
+---------------------------

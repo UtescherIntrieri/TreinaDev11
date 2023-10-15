@@ -1,0 +1,5 @@
+<h1>Livro de Receitas</h1>
+
+<% @recipes.each do |recipe| %>
+<%= link_to recipe.name, recipe %> <br> <%#  <a href="/receitas/<%= recipe.id"><%= recipe.name</a> <br> %>
+<% end %>

@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   resources :recipes, only: [:show, :new, :create, :edit, :update] do
     patch :publish, on: :member
   end
-  resources :recipe_types, only: [ :new, :create]
-  resources :cuisines, only: [ :new, :create]
+  resources :recipe_types, only: [:new, :create]
+  resources :cuisines, only: [:new, :create]
 end

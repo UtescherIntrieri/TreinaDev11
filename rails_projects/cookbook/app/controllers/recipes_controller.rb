@@ -35,8 +35,7 @@ class RecipesController < ApplicationController
       cuisine_id: params[:recipe][:cuisine_id],
       ingredientes: params[:recipe][:ingredientes],
       cook_method: params[:recipe][:cook_method],
-      cook_time: params[:recipe][:cook_time],
-      )
+      cook_time: params[:recipe][:cook_time])
       return redirect_to recipe_path(@recipe.id)
     end
     render :edit
